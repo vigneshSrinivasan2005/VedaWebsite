@@ -35,7 +35,7 @@
         searchBar.addEventListener('keyup', function(event){
             const searchfor=event.target.value.toLowerCase();
             table.forEach((row)=>{
-                row.querySelector('td').textContent.toLowerCase().contains(searchfor) ? row.style.display="visible" : row.style.display="null"
+                row.querySelector('td').textContent.toLowerCase().includes(searchfor) ? row.style.display="visible" : row.style.display="null"
             })    
         })
     </script>
